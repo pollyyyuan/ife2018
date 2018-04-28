@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css任务1</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="show-box">
+    <span class="info">前端学院</span>
+  </div>
+  <div class="btn-box">
+    <a href="#"class="btn">切换样式</a>
+  </div>
+</body>
+<script type="text/javascript">
+  var btn = document.querySelector('.btn');
+  btn.addEventListener('click',function(){
+    var info = document.querySelector('.info');
+    if(info.getAttribute('class') == 'info selected'){
+      info.setAttribute('class','info');
+    }else{
+      info.setAttribute('class','info selected');
+    }
+  });
+
+</script>
+</html>
