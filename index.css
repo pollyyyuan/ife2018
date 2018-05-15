@@ -34,7 +34,7 @@ body{
   left: 50%;
   width: 1px;
   height: 3px;
-
+  opacity: 0;
   background-color: #00f;
   transition: all 0.8s ;
 }
@@ -44,6 +44,7 @@ body{
 }
 .selected::after{
   transform: scaleX(110);
+  opacity: 1;
 }
 
 .btn-box{
@@ -57,6 +58,9 @@ body{
   border : 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.btn:active{
+  color: #111;
 }
 .btn:hover{
 
